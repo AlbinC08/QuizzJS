@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link id="style" rel="stylesheet" href="assets/css/position1.css">
+    <title>quizzJS</title>
+</head>
+
+<body>
+    <div class="horloge clock img_clock">
+        <span id="rebour"></span>
+        <div id="restart" class="aiguille hand seconds"></div>
+    </div>
+    <main>
+        <section>
+            <article>
+                <button class="control" onclick="play('audioPlayer', this)" id="score">score = 0</button>
+
+                <audio id="audioPlayer">
+                    <source src="assets/sound/star-wars-the-imperial-march-darth-vaders-theme.mp3">
+                    </source>
+                </audio>
+                
+                <p id="question">En quelle année fut lancée la sonde Voyager 1 ?</p>
+                <button id="button_A" class="button" onclick="check_answer(this)" type="button">1975</button>
+                <button id="button_B" class="button" onclick="check_answer(this)" type="button">1977</button>
+                <button id="button_C" class="button" onclick="check_answer(this)" type="button">1979</button>
+                <button id="button_D" class="button" onclick="check_answer(this)" type="button">1981</button>
+
+
+            </article>
+        </section>
+    </main>
+    <div id="container"></div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

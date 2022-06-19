@@ -1,0 +1,20 @@
+#button_A {
+    position: absolute;
+    top: -280px;
+    left: 400px;
+}
+#button_B {
+    position: absolute;
+    top: -200px;
+    right: 100px;
+}
+#button_C {
+    position: absolute;
+    top: 280px;
+    right: 300px;
+}
+#button_D {
+    position: absolute;
+    top: 400px;
+    right: 200px;
+}

@@ -1,0 +1,202 @@
+html,
+body,
+button {
+    cursor: url(../images/cursor3.png) 10 50, pointer;
+}
+
+
+.vert {
+    color: green;
+}
+
+.rouge {
+    color: red;
+}
+
+body {
+    background-image: url(../images/background1.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    text-align: center;
+    display: grid;
+}
+
+#question {
+    position: relative;
+    top: -200px;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    font-family: monospace;
+
+}
+
+#rebour {
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+
+}
+
+#score {
+    cursor: url(../images/cursor4.png), pointer;
+    background-image: url(../images/score.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 300px;
+    border-style: none;
+    height: 280px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    bottom: -500px;
+    right: -40%;
+    border-radius: 50%;
+    border-style: none;
+    border-width: 0px;
+}
+
+
+#button_A {
+    background-image: url(../images/boutonA.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 310px 310px;
+    border-radius: 50%;
+    border-style: none;
+    border-width: 0px;
+    height: 280px;
+    width: 280px;
+    color: rgb(255, 247, 0);
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+    text-justify: auto;
+}
+
+#button_B {
+    background-image: url(../images/boutonB.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px 250px;
+    border-radius: 50%;
+    border-style: none;
+    height: 230px;
+    width: 230px;
+    color: rgb(255, 247, 0);
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+
+}
+
+#button_C {
+    background-image: url(../images/boutonC.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 275px 275px;
+    border-radius: 50%;
+    border-style: none;
+    height: 240px;
+    width: 240px;
+    color: rgb(255, 247, 0);
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+
+}
+
+#button_D {
+    background-image: url(../images/boutonD.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 195px 195px;
+    border-radius: 50%;
+    border-style: none;
+    height: 170px;
+    width: 170px;
+    color: rgb(255, 247, 0);
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+
+section {
+    position: relative;
+}
+
+
+/**************clock****************/
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    position: relative;
+
+}
+.img_clock {
+    margin: 30px auto;
+    position: relative;
+    background-image: url(../images/soleil.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-size: 230px 230px;
+
+}
+
+.hand {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0% 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.seconds {
+    width: 10px;
+    height: 90px;
+    background: rgb(0, 0, 0);
+    top: 22px;   
+    animation: rota 30s steps(30, end) infinite;
+}
+
+@keyframes rota {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rota2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.alt {
+    animation-name: rota2;
+}
+
