@@ -25,6 +25,7 @@ body {
 
 #question {
     position: relative;
+    z-index: 1;
     top: -200px;
     font-size: 30px;
     font-weight: bold;
@@ -36,7 +37,6 @@ body {
 #rebour {
     color: rgb(0, 0, 0);
     font-size: 100px;
-
 }
 
 #score {
@@ -55,10 +55,9 @@ body {
     font-size: 40px;
     font-weight: bold;
     position: relative;
-    bottom: -500px;
+    bottom: -370px;
     right: -40%;
     border-radius: 50%;
-    border-style: none;
     border-width: 0px;
 }
 
@@ -138,6 +137,9 @@ section {
 
 
 /**************clock****************/
+.horloge {
+    cursor: url(../images/cursor6.png) 40 10, pointer;
+}
 
 .clock {
     display: flex;
@@ -145,8 +147,8 @@ section {
     justify-content: center;
     margin: 30px auto;
     position: relative;
-
 }
+
 .img_clock {
     margin: 30px auto;
     position: relative;
@@ -172,7 +174,7 @@ section {
     width: 10px;
     height: 90px;
     background: rgb(0, 0, 0);
-    top: 22px;   
+    top: 22px;
     animation: rota 30s steps(30, end) infinite;
 }
 
@@ -199,4 +201,3 @@ section {
 .alt {
     animation-name: rota2;
 }
-
